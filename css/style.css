@@ -1,0 +1,389 @@
+* 
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root
+{
+  --blue: #008AC6;
+  --blue2: #00ace6;
+  --blue3: #002F62;
+  --blue4: #0072ef;
+  --white: #fff;
+  --white2: #FEFEFA;
+  --white3: #ebeef3;
+  --grey: #f5f5f5;
+  --grey2: #707070;
+  --black1: #1B1B1B;
+  --black2: #374955;
+}
+html
+{
+  scroll-behavior: smooth;
+}
+
+ul, li
+{
+ list-style: none; 
+}
+a
+{
+  text-decoration: none;
+}
+p
+{
+  text-align: justify;
+}
+header
+{
+  padding-bottom: 50px;
+}
+.container{
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* Tombol Navigasi */
+.navigasi
+{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: var(--blue3);
+  overflow: hidden;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.navigasi ul
+{
+  float: right;
+  position: absolute;
+  width: 100%;
+  color: var(--white);
+}
+.navigasi ul li
+{
+  float: right;
+  position: relative;
+}
+.navigasi ul li a
+{
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: var(--white);
+}
+.navigasi ul li a:hover
+{
+  background-color: var(--white);
+  color: var(--blue3);
+  border-radius: 5px;
+}
+.logo
+{
+  float: left;
+  padding: 15px;
+}
+
+/* Home */
+#home
+{
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.konten
+{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+}
+.konten1
+{
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+.konten2
+{
+  float: left;
+  width: 40%;
+}
+.konten2 h4, p
+{
+  color: var(--grey2);
+  padding-top: 8px;
+  font-size: 1.2rem;
+  
+}
+.konten2 .tombol
+{
+  width: 150px;
+  text-align: center;
+  font-size: 1.1rem;
+  background-color: var(--blue2);
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+  margin: 15px 0;
+  cursor: pointer;
+}
+.konten2 .tombol a
+{
+  color: var(--white);
+}
+.text 
+{
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--blue3);
+}
+/* Animasi Mengetik */
+#typewriter
+{
+  width: 100%;
+  height: 50px;
+  color: var(--blue2);
+  font-size: 30px;
+  font-weight: bold;
+}
+#cursor
+{
+  color: var(--blue2);
+  animation: blink 1s linear infinite;
+}
+@keyframes blink 
+{
+  0% 
+  {
+    opacity: 100%;
+  }
+  50%
+  {
+    opacity: 0%;
+  }
+}
+
+/* Halaman Tentang Saya */
+#about
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: whitesmoke;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.about
+{
+  width: 100%;
+}
+.about h3
+{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--blue2);
+}
+.iconSosmed img
+{
+  width: 22px;
+  margin: 10px 10px 10px 0;
+}
+
+/* Belajar */
+#belajar
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+#belajar .container
+{
+  text-align: center;
+  color: var(--blue2);
+}
+.belajar
+{
+  display: grid;
+  width: 100%;
+  padding: 30px;
+  grid-template-columns: repeat(8,1fr);
+  justify-content: center;
+}
+.belajar span
+{
+  display: flex;
+  width: 125px;
+  height: 125px;
+  padding: 20px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: var(--white2);
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.belajar span:hover
+{
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.250);
+}
+
+/* Portofolio */
+#portofolio
+{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.cardBox
+{
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 30px;
+  margin-top: 50px;
+  justify-content: center;
+}
+.cardBox h1
+{
+  text-align: center;
+  color: var(--blue);
+  padding: 20px;
+}
+.cardBox .card
+{
+  display: flex;
+  background-color: var(--white2);
+  padding: 30px;
+  border-radius: 20px;
+  justify-content: center;
+  box-shadow: 0 7px 25px rgba(0,0,0,0.08);
+}
+.cardBox .card img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+.cardBox .card .cardDesk
+{
+  color: var(--black2);
+  font-size: 1.1em;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+/* Form Pesan/Kontak */
+#kontak
+{
+  padding-top: 100px;
+}
+.kontak 
+{
+  width: 60%;
+  height: 70vh;
+  margin: auto;
+}
+.kontak h2
+{
+  color: var(--blue2);
+  text-align: center;
+}
+.input1
+{
+  width: 45%;
+  height: 10vh;
+  float: left;
+  margin-top: 30px;
+}
+.input2 
+{
+  width: 45%;
+  height: 10vh;
+  float: right;
+  margin-top: 30px;
+}
+.input1 input, .input2 input
+{
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.inputPesan
+{
+  width: 100%;
+  height: 10vh;
+  float: left;
+  margin-top: 20px;
+}
+textarea
+{
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+}
+#pesanSubmit 
+{
+  width: 25%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 8px;
+  background-color: var(--blue);
+  color: var(--white);
+  outline: none;
+  border: none;
+  border-radius: 60px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* footer */
+.footer1
+{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 50px;
+  overflow: hidden;
+  background-color: var(--blue3);
+}
+.foot 
+{
+  float: left;
+  width: 40%;
+  padding: 20px;
+  margin-top: 10px;
+  color: var(--white2);
+}
+.foot ul,li
+{
+  padding: 5px;
+}
+.foot ul a
+{
+  color: var(--white2);
+  text-decoration: none;
+}
+.foot iframe
+{
+  padding: 15px;
+  width: 500px;
+  height: 400px;
+}
+.footer2 p
+{
+  justify-content: center;
+  text-align: center;
+  background-color: var(--blue3);
+  color: var(--grey);
+  border-top: 1px solid var(--blue);
+  padding: 10px;
+}
